@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Циферки — SimGenerator Clone</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/screens.css">
+</head>
+<body>
+
+<!-- Верхняя панель -->
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="topbar-info">
+    <div class="balance-box">
+      <small>БАЛАНС</small>
+      <span id="balance">65 000 ₽</span>
+    </div>
+    <div class="level-box">
+      Ур. <b id="level">1</b> / 500
+    </div>
+  </div>
+</header>
+
+<!-- Боковое меню -->
+<nav class="side-menu" id="sideMenu">
+  <div class="side-menu-header">
+    <h2>Циферки</h2>
+    <button class="close-menu" id="closeMenu">×</button>
+  </div>
+  <ul class="side-menu-list">
+    <li data-screen="minigames">🎮 Мини-игры</li>
+    <li data-screen="rating">🏆 Рейтинг</li>
+    <li data-screen="quests">🎁 Ежедневные задания</li>
+    <li data-screen="friends">👥 Друзья</li>
+    <li data-screen="stats">📊 Статистика</li>
+    <li data-screen="seasons">🏆 Сезоны</li>
+    <li data-screen="cosmetics">🎨 Оформления</li>
+    <li data-screen="showcase">✨ Витрина</li>
+    <li data-screen="notifications">🔔 Уведомления</li>
+    <li data-screen="collection">📁 Коллекция</li>
+    <li data-screen="market">🏪 Рынок</li>
+    <li data-screen="auction">🔨 Аукцион</li>
+    <li data-screen="deals">🤝 Сделки</li>
+    <li data-screen="phones">📱 Телефон</li>
+    <li data-screen="history">📜 История</li>
+    <li data-screen="settings">⚙️ Настройки</li>
+  </ul>
+</nav>
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- Основной контент -->
+<main class="app" id="app">
+  <!-- Экраны рендерятся сюда -->
+</main>
+
+<!-- Нижняя навигация -->
+<nav class="bottom-nav">
+  <button data-screen="home" class="active">🏠<br><small>Главная</small></button>
+  <button data-screen="minigames">🎮<br><small>Игры</small></button>
+  <button data-screen="roaming">🌍<br><small>Роуминг</small></button>
+  <button data-screen="crash">🚀<br><small>Краш</small></button>
+  <button data-screen="profile">👤<br><small>Профиль</small></button>
+</nav>
+
+<!-- Тосты -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- Модальное окно -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalContent"></div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/state.js"></script>
+<script src="js/generator.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/screens/home.js"></script>
+<script src="js/screens/collection.js"></script>
+<script src="js/screens/roaming.js"></script>
+<script src="js/screens/history.js"></script>
+<script src="js/screens/settings.js"></script>
+<script src="js/screens/market.js"></script>
+<script src="js/screens/auction.js"></script>
+<script src="js/screens/deals.js"></script>
+<script src="js/screens/phones.js"></script>
+<script src="js/screens/crash.js"></script>
+<script src="js/screens/profile.js"></script>
+<script src="js/screens/minigames.js"></script>
+<script src="js/screens/rating.js"></script>
+<script src="js/screens/quests.js"></script>
+<script src="js/screens/friends.js"></script>
+<script src="js/screens/stats.js"></script>
+<script src="js/screens/seasons.js"></script>
+<script src="js/screens/cosmetics.js"></script>
+<script src="js/screens/showcase.js"></script>
+<script src="js/screens/notifications.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

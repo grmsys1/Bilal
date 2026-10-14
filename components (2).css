@@ -1,0 +1,72 @@
+.btn {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform .15s, opacity .2s, box-shadow .2s;
+}
+.btn:active { transform: scale(.97); box-shadow: 0 0 18px rgba(212,175,55,.55); }
+.btn:disabled { opacity: .4; pointer-events: none; }
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+  color: #1a1430;
+}
+.btn-outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--gold);
+}
+.btn-danger { background: var(--danger); color: #fff; }
+.btn-success { background: var(--success); color: #1a1430; }
+
+.toast {
+  background: var(--bg3);
+  border: 1px solid var(--gold);
+  color: var(--text);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  animation: toastIn .3s ease;
+}
+@keyframes toastIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--gold-dark);
+  border-radius: 16px;
+  padding: 16px;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.card:hover { transform: translateY(-2px); border-color: var(--gold); box-shadow: 0 8px 24px rgba(212,175,55,.14); }
+
+.animation-options { display: flex; gap: 8px; }
+.animation-options .btn { flex: 1; padding: 10px 8px; font-size: 12px; }
+
+.rarity-common    { color: var(--common); }
+.rarity-uncommon  { color: var(--uncommon); }
+.rarity-rare      { color: var(--rare); }
+.rarity-epic      { color: var(--epic); }
+.rarity-legendary { color: var(--legendary); }
+.rarity-mythic    { color: var(--mythic); }
+
+[data-animations="short"] *,
+[data-animations="short"] *::before,
+[data-animations="short"] *::after {
+  transition-duration: .12s !important;
+  animation-duration: .25s !important;
+}
+
+[data-animations="off"] *,
+[data-animations="off"] *::before,
+[data-animations="off"] *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}

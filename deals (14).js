@@ -1,0 +1,1 @@
+Screens.deals = { render(app) { app.innerHTML = '<div class="card"><h2>🤝 Сделки</h2><p style="color:var(--text-dim);">В разработке</p></div>'; } };

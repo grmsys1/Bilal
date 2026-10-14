@@ -1,0 +1,19 @@
+:root {
+  --bg: #0a0a0a;
+  --bg2: #141210;
+  --bg3: #1c1814;
+  --gold: #d4af37;
+  --gold-light: #f0d97a;
+  --gold-dark: #8a7020;
+  --text: #f5f0e0;
+  --text-dim: #8a7f6a;
+  --border: #3a2f1c;
+  --success: #d4af37;
+  --danger: #c0392b;
+  --common: #a99c7f;
+  --uncommon: #bda34a;
+  --rare: #d4af37;
+  --epic: #e1c45a;
+  --legendary: #f0d97a;
+  --mythic: #fff0a8;
+}

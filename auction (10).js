@@ -1,0 +1,1 @@
+Screens.auction = { render(app) { app.innerHTML = '<div class="card"><h2>🔨 Аукцион</h2><p style="color:var(--text-dim);">В разработке</p></div>'; } };
